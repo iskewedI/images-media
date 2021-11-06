@@ -1,0 +1,74 @@
+.rows-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.row__container {
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.slider {
+  transition: all 0.5s ease-out;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+  list-style: none;
+  padding: 0.7rem;
+  justify-content: center;
+}
+
+.row__title {
+  text-transform: uppercase;
+}
+
+.row__image-container {
+  transition: all 0.5s ease-out;
+}
+
+.row__image {
+  transition: all 0.05s ease-out;
+}
+
+.row__image.hoverable__image:hover {
+  transform: scale(1.3);
+}
+
+.btn.unestiled {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+.grabbable {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.grabbable:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.disable-image-drag {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
